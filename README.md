@@ -28,3 +28,15 @@ Genuine =Genuine U Xi;
 Else
 Fraud =Fraud U Xi;
 End
+# credit card fraud detection algorithm 2 code
+T: current transaction with w-1 transaction from window.
+C: represents the classifier
+Label: true value of the incoming/current transaction.
+K: total of transactions processed by model.
+If the predicted value ≠ label and label==0 then,
+For i in range (0, K):
+If the predicted value ≠ label then,
+rsi= rsi-1;
+Else
+rsi =rsi+1;
+End
